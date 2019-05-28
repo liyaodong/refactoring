@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Net.NetworkInformation;
+using System.Numerics;
 
 namespace ConsoleApp1
 {
@@ -9,9 +10,14 @@ namespace ConsoleApp1
         {
             Console.WriteLine("This is main function");
         }
-        public static int Print(int n)
+        public static BigInteger Print(int n)
         {
-            return n;
+            if (n <= 1)
+            {
+                return 1;
+            }
+            
+            return Print(n - 1) + Print(n - 2);
         }
     }
 }
