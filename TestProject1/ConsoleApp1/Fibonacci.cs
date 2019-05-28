@@ -12,12 +12,19 @@ namespace ConsoleApp1
         }
         public static BigInteger Print(int n)
         {
-            if (n <= 1)
+            var a = new BigInteger(1);
+            var b = new BigInteger(0);
+            BigInteger temp;
+
+            while (n >= 0)
             {
-                return 1;
+                temp = a;
+                a += b;
+                b = temp;
+                n--;
             }
             
-            return Print(n - 1) + Print(n - 2);
+            return b;
         }
     }
 }

@@ -33,7 +33,7 @@ namespace TestProject1
         [Fact]
         public void GivenVeryLargeNumberFibonacciShouldWorkPerfect()
         {
-            Assert.Equal(BigInteger.Parse("5358359254990966640871840"), Fibonacci.Print(120));
+            Assert.Equal(BigInteger.Parse("8670007398507948658051921"), Fibonacci.Print(120));
         }
     }
 }
