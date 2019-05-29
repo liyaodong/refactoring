@@ -8,7 +8,10 @@ namespace ConsoleApp1
     {
         public static void Main()
         {
-            Console.WriteLine("This is main function");
+            Console.WriteLine("Please Input Your Number:");
+            var n = Console.ReadLine();
+            var result = Print(Int32.Parse(n));
+            Console.WriteLine(result);
         }
         public static BigInteger Print(int n)
         {

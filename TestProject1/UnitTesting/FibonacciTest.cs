@@ -2,7 +2,7 @@ using System.Numerics;
 using ConsoleApp1;
 using Xunit;
 
-namespace TestProject1
+namespace UnitTesting
 {
     public class FibonacciTest
     {
